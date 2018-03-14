@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="50360" started-at="2018-03-14T09:42:02Z" finished-at="2018-03-14T09:42:52Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="50360" started-at="2018-03-14T09:42:02Z" finished-at="2018-03-14T09:42:52Z">
+      <class name="in.zipgo.automation_framework.tests.RegressionLevelthreeMembership">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelthreeMembership@58a90037]" name="setupTest" is-config="true" duration-ms="11" started-at="2018-03-14T15:12:02Z" finished-at="2018-03-14T15:12:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="opendashboard()[pri:1, instance:in.zipgo.automation_framework.tests.RegressionLevelthreeMembership@58a90037]" name="opendashboard" duration-ms="12677" started-at="2018-03-14T15:12:02Z" finished-at="2018-03-14T15:12:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- opendashboard -->
+        <test-method status="PASS" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelthreeMembership@58a90037]" name="tearDownTest" is-config="true" duration-ms="1" started-at="2018-03-14T15:12:14Z" finished-at="2018-03-14T15:12:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=opendashboard status=SUCCESS method=RegressionLevelthreeMembership.opendashboard()[pri:1, instance:in.zipgo.automation_framework.tests.RegressionLevelthreeMembership@58a90037] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method status="PASS" signature="logintodashboard()[pri:2, instance:in.zipgo.automation_framework.tests.RegressionLevelthreeMembership@58a90037]" name="logintodashboard" duration-ms="8193" started-at="2018-03-14T15:12:14Z" finished-at="2018-03-14T15:12:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintodashboard -->
+        <test-method status="PASS" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelthreeMembership@58a90037]" name="tearDownTest" is-config="true" duration-ms="0" started-at="2018-03-14T15:12:23Z" finished-at="2018-03-14T15:12:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logintodashboard status=SUCCESS method=RegressionLevelthreeMembership.logintodashboard()[pri:2, instance:in.zipgo.automation_framework.tests.RegressionLevelthreeMembership@58a90037] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method status="PASS" signature="discountbasedmembership()[pri:3, instance:in.zipgo.automation_framework.tests.RegressionLevelthreeMembership@58a90037]" name="discountbasedmembership" duration-ms="29449" started-at="2018-03-14T15:12:23Z" finished-at="2018-03-14T15:12:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- discountbasedmembership -->
+        <test-method status="PASS" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelthreeMembership@58a90037]" name="tearDownTest" is-config="true" duration-ms="1" started-at="2018-03-14T15:12:52Z" finished-at="2018-03-14T15:12:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=discountbasedmembership status=SUCCESS method=RegressionLevelthreeMembership.discountbasedmembership()[pri:3, instance:in.zipgo.automation_framework.tests.RegressionLevelthreeMembership@58a90037] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- in.zipgo.automation_framework.tests.RegressionLevelthreeMembership -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
