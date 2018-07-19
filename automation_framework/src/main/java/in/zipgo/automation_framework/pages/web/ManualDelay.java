@@ -11,7 +11,10 @@ import jxl.Workbook;
 //............................30/12/2017..........................................
 
 public class ManualDelay extends BasePage {
+	final By clipchevoronright      = By.xpath("//*[@class='clip-chevron-right']");
+	final By transportation         = By.xpath("//span[text()='Transportation']");
 	
+	final By bustrip                = By.xpath("//span[text()='Bus Trips']");
 	final By searchdriver           =By.xpath("//input[@type='search']");
 	final By glyphicon              =By.xpath("(//span[@class='glyphicon glyphicon-edit'])[1]");
     final By regulation             =By.xpath("(//ul[@class='nav nav-tabs responsive hidden-xs hidden-sm'])[1]/child::*[2]");
@@ -26,7 +29,7 @@ public class ManualDelay extends BasePage {
 		
 		    try{
 		    
-			File datafile=new File("C:\\Users\\Lenovo\\Documents\\autoscripts\\src\\test\\resources\\testData\\CreateTripdata.xls");
+			File datafile=new File("C:\\Users\\Lenovo\\Automation_Zipgo\\autoscripts_master\\src\\test\\resources\\testData\\CreateTripdata.xls");
 	 	    Workbook rwb=Workbook.getWorkbook(datafile);
 	 	    int nous=rwb.getNumberOfSheets();
 	 	    Sheet rsh=rwb.getSheet(0);
@@ -34,6 +37,17 @@ public class ManualDelay extends BasePage {
 	   
 	 	    String secondriver=rsh.getCell(3, 0).getContents();
 	 	    refresh();
+	 	    handledSleep(3);		
+		    implictwait(30);
+			clickButton(waitForElement(clipchevoronright));
+			implictwait(30);
+			clickButton(waitForElement(transportation));
+		    handledSleep(1);		
+			implictwait(30);
+			clickButton(waitForElement(bustrip));
+		    handledSleep(1);		
+		    implictwait(30);
+	 	    
 		    waitForElement(searchdriver).sendKeys(secondriver);	
 		   // handledSleep(5);		
 	        }

@@ -29,7 +29,7 @@ public class CancelCabTrip extends BasePage {
 		
 		
 		    try{
-			File datafile=new File("C:\\Users\\Lenovo\\Documents\\autoscripts\\src\\test\\resources\\testData\\CreateTripdata.xls");
+			File datafile=new File("C:\\Users\\Lenovo\\Automation_Zipgo\\autoscripts_master\\src\\test\\resources\\testData\\CreateTripdata.xls");
 	 	    Workbook rwb=Workbook.getWorkbook(datafile);
 	 	    int nous=rwb.getNumberOfSheets();
 	 	    Sheet rsh=rwb.getSheet(0);
@@ -93,7 +93,7 @@ public class CancelCabTrip extends BasePage {
 	public CancelCabTrip verifyCancellation() {
 		
 		        try{
-				File datafile=new File("C:\\Users\\Lenovo\\Documents\\autoscripts\\src\\test\\resources\\testData\\CreateTripdata.xls");
+				File datafile=new File("C:\\Users\\Lenovo\\Automation_Zipgo\\autoscripts_master\\src\\test\\resources\\testData\\CreateTripdata.xls");
 			 	Workbook rwb=Workbook.getWorkbook(datafile);
 			 	int nous=rwb.getNumberOfSheets();
 			 	Sheet rsh=rwb.getSheet(0);

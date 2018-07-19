@@ -1,4 +1,4 @@
-package in.zipgo.automation_framework.tests;
+/*package in.zipgo.automation_framework.tests;
 
 import in.zipgo.automation_framework.base.Configurations;
 import java.util.Map;
@@ -25,3 +25,4 @@ public class ConfigurationsTest {
         }
     }
 }
+*/

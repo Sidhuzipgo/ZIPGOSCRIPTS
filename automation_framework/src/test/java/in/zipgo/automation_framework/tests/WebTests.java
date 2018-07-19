@@ -1,4 +1,4 @@
-package in.zipgo.automation_framework.tests;
+/*package in.zipgo.automation_framework.tests;
 
 import in.zipgo.automation_framework.base.DriverFactory;
 import in.zipgo.automation_framework.base.TestGroups;
@@ -53,3 +53,4 @@ public class WebTests {
         return testData;
     }
 }
+*/

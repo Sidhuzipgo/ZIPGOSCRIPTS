@@ -27,6 +27,7 @@ public class ApiTests extends Assert {
         Session session = SessionEnums.VALID_SESSION_INFO.getData();
         
         Response response = manager.post("https://beta.zipgo.in", "/sessions/connect", session);
+
         assertEquals(response.statusCode(), 200, "Something went wrong with the request");
         MemberResponse memResp = response.as(MemberResponse.class);
         String ssoToken = memResp.getSsoToken();

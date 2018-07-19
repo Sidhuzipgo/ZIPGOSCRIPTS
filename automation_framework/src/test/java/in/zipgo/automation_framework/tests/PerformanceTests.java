@@ -1,9 +1,12 @@
-package in.zipgo.automation_framework.tests;
+/*package in.zipgo.automation_framework.tests;
 
 import in.zipgo.automation_framework.base.DriverFactory;
 import in.zipgo.automation_framework.pages.web.DashboardPage;
+import in.zipgo.automation_framework.pages.web.Googlelogin;
 import in.zipgo.automation_framework.pages.web.LoginPage;
 import in.zipgo.automation_framework.pages.web.SignInPage;
+import in.zipgo.automation_framework.workflow.Dashboardlevelone;
+import in.zipgo.automation_framework.workflow.DashboardleveloneImplementation;
 import in.zipgo.automation_framework.workflow.ZipGoWorkFlowImplementations;
 import in.zipgo.automation_framework.workflow.ZipGoWorkflows;
 import java.io.IOException;
@@ -25,9 +28,13 @@ public class PerformanceTests extends Assert {
         LoginPage loginPage = zgw.navigateToLoginPage(signInPage);
         Thread.sleep(10000);
         DashboardPage dashboardPage = null;
-        dashboardPage = (DashboardPage) zgw.loginToAsAdministrator(loginPage, "rajesh23427@gmail.com", "12345", DashboardPage.class);
+        Dashboardlevelone dash=new DashboardleveloneImplementation();
+        Googlelogin goglog=new Googlelogin();      
+        dash.logintogmail(goglog);  
+        //dashboardPage = (DashboardPage) zgw.loginToAsAdministrator(loginPage, "rajesh23427@gmail.com", "12345", DashboardPage.class);
         Thread.sleep(10000);
         DriverFactory.getHttpTraffic();
         DriverFactory.getDriver().quit();
     }
 }
+*/

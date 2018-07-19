@@ -54,13 +54,13 @@ public class DriverAttendance extends BasePage {
 
 	    public DriverAttendance givepresent() throws BiffException, IOException {
 	    	
-	    	File datafile=new File("C:\\Users\\Lenovo\\Documents\\autoscripts\\src\\test\\resources\\testData\\CreateTripdata.xls");
+	    	File datafile=new File("C:\\Users\\Lenovo\\Automation_Zipgo\\autoscripts_master\\src\\test\\resources\\testData\\CreateTripdata.xls");
 	 	    Workbook rwb=Workbook.getWorkbook(datafile);
 	 	    int nous=rwb.getNumberOfSheets();  
 			Sheet rsh=rwb.getSheet(0);
 	 	    int nour=rsh.getRows();
 	 	    int nouc=rsh.getColumns();
-	        String cabnamedata         =rsh.getCell(5, 0).getContents();
+	        String cabnamedata         =rsh.getCell(1, 0).getContents();
 	        System.out.println("give Present"+cabnamedata);
 			sendValuesToWebElement(waitForElement(searchbox),cabnamedata);
 		    implictwait(40);
@@ -82,13 +82,13 @@ public class DriverAttendance extends BasePage {
 	    
         public DriverAttendance giveabsent() throws BiffException, IOException {
 	    	
-	    	File datafile=new File("C:\\Users\\Lenovo\\Documents\\autoscripts\\src\\test\\resources\\testData\\CreateTripdata.xls");
+	    	File datafile=new File("C:\\Users\\Lenovo\\Automation_Zipgo\\autoscripts_master\\src\\test\\resources\\testData\\CreateTripdata.xls");
 	 	    Workbook rwb=Workbook.getWorkbook(datafile);
 	 	    int nous=rwb.getNumberOfSheets();  
 			Sheet rsh=rwb.getSheet(0);
 	 	    int nour=rsh.getRows();
 	 	    int nouc=rsh.getColumns();
-	        String cabnamedata         =rsh.getCell(6, 0).getContents();
+	        String cabnamedata         =rsh.getCell(2, 0).getContents();
 	        refresh();
 		    implictwait(40);
 			sendValuesToWebElement(waitForElement(searchbox),cabnamedata);
@@ -124,13 +124,13 @@ public class DriverAttendance extends BasePage {
         	handledSleep(5);
         	
 		    
-		    File datafile=new File("C:\\Users\\Lenovo\\Documents\\autoscripts\\src\\test\\resources\\testData\\CreateTripdata.xls");
+		    File datafile=new File("C:\\Users\\Lenovo\\Automation_Zipgo\\autoscripts_master\\src\\test\\resources\\testData\\CreateTripdata.xls");
 	 	    Workbook rwb=Workbook.getWorkbook(datafile);
 	 	    int nous=rwb.getNumberOfSheets();  
 			Sheet rsh=rwb.getSheet(0);
 	 	    int nour=rsh.getRows();
 	 	    int nouc=rsh.getColumns();
-	        String Presentcabnamedata         =rsh.getCell(5, 0).getContents();
+	        String Presentcabnamedata         =rsh.getCell(1, 0).getContents();
 	        System.out.println("Validate Attendance..."+Presentcabnamedata);
 	        refresh();
 		    implictwait(40);
@@ -154,7 +154,7 @@ public class DriverAttendance extends BasePage {
 			
 			
             handledSleep(3);
-            String Absentcabnamedata         =rsh.getCell(6, 0).getContents();
+            String Absentcabnamedata         =rsh.getCell(2, 0).getContents();
             System.out.println("givePresent....."+Absentcabnamedata);
 	        refresh();
 		    implictwait(40);

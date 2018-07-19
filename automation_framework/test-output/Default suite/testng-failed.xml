@@ -6,6 +6,7 @@
       <class name="in.zipgo.automation_framework.tests.RegressionLevelOne">
         <methods>
           <include name="manualDelay"/>
+          <include name="cancelfirsttrip"/>
           <include name="tearDownTest"/>
           <include name="setupTest"/>
         </methods>

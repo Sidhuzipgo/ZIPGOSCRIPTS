@@ -79,7 +79,9 @@ import org.openqa.selenium.interactions.Actions;
 		       CreateTrip_helper createtrip1 =new CreateTrip_helper();		       
 		       dash.newtrip(createtrip1);
 		       dash.tmrwtrip(createtrip1);
-		       dash.validatetrips(createtrip1);		          
+		       //dash.createractrip(createtrip1);
+		       dash.validatetrips(createtrip1);	
+		       
 		  }
 		  
 		  @Test(priority=4)
@@ -97,7 +99,7 @@ import org.openqa.selenium.interactions.Actions;
                dash.delaycab(delacab1);
 		  }
 		  
-		 /* @Test(priority=6)
+		  @Test(priority=6)
 		  public void cancelfirsttrip() {
 	           Dashboardlevelone dash=new DashboardleveloneImplementation();
 	           CancelCabTrip cancelfirsttrip=new CancelCabTrip();
@@ -144,6 +146,7 @@ import org.openqa.selenium.interactions.Actions;
 	          Dashboardlevelone dash=new DashboardleveloneImplementation();
 			  CreateOrder neworder=new CreateOrder();
 			  dash.createanorder(neworder);
+			  //dash.createracorder(neworder);
 			  dash.validateorder(neworder);
 			 
 		  }
@@ -156,7 +159,7 @@ import org.openqa.selenium.interactions.Actions;
 		  }
 		  		 
 		 
-		  @Test(priority=13)
+		 /* @Test(priority=13)
 		  public void opendriverapp() throws BiffException, IOException, InterruptedException {			 
 			  Driverapplevelone cabapp=new DriverappleveloneImplementation();
 			  OpenDriverApp oda=new OpenDriverApp();
@@ -173,28 +176,29 @@ import org.openqa.selenium.interactions.Actions;
 			  ValidateDriverAppAttendance vdapp=new ValidateDriverAppAttendance();
 			  dash.validatedriverappattendance(vdapp);
 			 
-		  }
+		  }*/
 		  
 		
 		 
-		  @Test(priority=15)
+		/*  @Test(priority=15)
 		   public void deletetrips() throws BiffException, IOException, InterruptedException {			 
 		        DeleteTrips deletecab=new DeleteTrips();
 		        deletecab.deletealltrips();			 
 			 
 	       }
-		@Test(priority=15)
-		public void Customerapp() throws BiffException, IOException, InterruptedException {
+		 
+		 @Test(priority=15)
+		 public void Customerapp() throws BiffException, IOException, InterruptedException {
 			 CustomerApp cust=new CustomerApp();
 			 cust.opencustapp();
 			 cust.logincustomerapp();
 			 cust.upcomingtrip();
 			 cust.newreq();
 			 
-		}
+		 }
+		*/
 		
-		
-	*/
+	
      	  
 		
 		

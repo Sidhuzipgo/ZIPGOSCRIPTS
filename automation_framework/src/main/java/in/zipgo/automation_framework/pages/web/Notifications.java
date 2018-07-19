@@ -6,6 +6,7 @@ import java.util.TimeZone;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import in.zipgo.automation_framework.pages.mobile.CustomerApp;
 
@@ -42,6 +43,7 @@ public class Notifications extends BasePage {
         handledSleep(5);
         implictwait(40);
         scrolldown();
+        handledSleep(3);
         implictwait(40);
         clickButton(waitForElement(notificationpodcast));
         handledSleep(2);
@@ -70,7 +72,7 @@ public class Notifications extends BasePage {
         clickButton(waitForElement(choosecustomer));
         handledSleep(2);
         implictwait(40);
-		sendValuesToWebElement(waitForElement(sendcustmailastag),"zipgouser@gmail.com");
+		sendValuesToWebElement(waitForElement(sendcustmailastag),"autocustomer2@gmail.com");
 		handledSleep(2);
         implictwait(40);
         actiondownkey();
@@ -78,6 +80,7 @@ public class Notifications extends BasePage {
         clickButton(waitForElement(notificationsave));
 		handledSleep(2);       
         implictwait(30);
+       
         SimpleDateFormat f = new SimpleDateFormat("HH:mm");
         f.setTimeZone(TimeZone.getTimeZone("UTC"));
         System.out.println(f.format(new Date()));

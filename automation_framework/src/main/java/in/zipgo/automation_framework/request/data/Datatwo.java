@@ -35,7 +35,7 @@ public class Datatwo {
 			MongoCollection<Document> cust = db.getCollection("customers");
 
 			
-			int x=1046270;
+			int x=1046628;
 			int x1=1037854;
 			int  x4=1037729;
 			int x3=1045958;

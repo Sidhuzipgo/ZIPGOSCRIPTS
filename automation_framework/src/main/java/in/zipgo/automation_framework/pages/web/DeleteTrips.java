@@ -43,7 +43,7 @@ public class DeleteTrips extends BasePage {
          clickButton(waitForElement(transportation));
          clickButton(waitForElement(bustrips));
          
-          File datafile=new File("C:\\Users\\Lenovo\\Documents\\autoscripts\\src\\test\\resources\\testData\\CreateTripdata.xls");
+          File datafile=new File("C:\\Users\\Lenovo\\Automation_Zipgo\\autoscripts_master\\src\\test\\resources\\testData\\CreateTripdata.xls");
 	 	  Workbook rwb=Workbook.getWorkbook(datafile);
 	 	  int nous=rwb.getNumberOfSheets();
 	 	  Sheet rsh=rwb.getSheet(0);

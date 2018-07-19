@@ -296,6 +296,12 @@ public class BasePage {
    	 driver.manage().timeouts().implicitlyWait(i, TimeUnit.SECONDS);
 		 
    }
+    
+   public void actionsendkeys(String data) {
+	   	Actions a=new Actions(driver);
+        a.sendKeys(data).build().perform();
+	   	
+   }
    
    public void actionenter(){
    	Actions a=new Actions(driver);

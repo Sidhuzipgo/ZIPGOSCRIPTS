@@ -54,7 +54,7 @@ public class CreateOrder extends BasePage {
 	final By ordersinpopup         = By.xpath("(//a[text()='Orders'])[1]");
 	final By listoforder           = By.xpath("(//tr[@class='odd']/child::td[1])[4]");
 
-    
+    final By waittilltime          = By.xpath("//input[@id='order_wait_till_time']");
     
     public  CreateOrder  create_neworder1() throws BiffException, IOException  {
     	
@@ -67,7 +67,7 @@ public class CreateOrder extends BasePage {
   	   
 
     	  // waitForElement(selectcustid).click();
-		  File datafile=new File("C:\\Users\\Lenovo\\Documents\\autoscripts\\src\\test\\resources\\testData\\CreateOrder.xls");
+		  File datafile=new File("C:\\Users\\Lenovo\\Automation_Zipgo\\autoscripts_master\\src\\test\\resources\\testData\\CreateOrder.xls");
 	 	  Workbook rwb=Workbook.getWorkbook(datafile);
 	 	  Sheet rsh=rwb.getSheet(0);
       
@@ -79,13 +79,13 @@ public class CreateOrder extends BasePage {
 	      handledSleep(2);
 
 		  actionenter();
-		  File datafile1=new File("C:\\Users\\Lenovo\\Documents\\autoscripts\\src\\test\\resources\\testData\\CreateTripdata.xls");
+		  File datafile1=new File("C:\\Users\\Lenovo\\Automation_Zipgo\\autoscripts_master\\src\\test\\resources\\testData\\CreateTripdata.xls");
 	 	  Workbook rwb1=Workbook.getWorkbook(datafile1);
 	 	  int nous=rwb1.getNumberOfSheets();   
 		  Sheet rsh1=rwb1.getSheet(0);
 
-	      String pickuploc      =rsh1.getCell(1, 7).getContents();
-	      String droploc        =rsh1.getCell(1, 8).getContents();
+	      String pickuploc      =rsh1.getCell(5, 7).getContents();
+	      String droploc        =rsh1.getCell(5, 8).getContents();
 	     
 	    
 	      implictwait(30);
@@ -128,9 +128,9 @@ public class CreateOrder extends BasePage {
       
     }
     
-    public  CustomerApp  create_new_rac_order() throws BiffException, IOException  {
+    public  CreateOrder  create_new_rac_order() throws BiffException, IOException  {
     	
-	    handledSleep(5);
+	    handledSleep(2);
         implictwait(40);
         clickButton(waitForElement(clipcart));
         implictwait(30);
@@ -142,10 +142,12 @@ public class CreateOrder extends BasePage {
 	  File datafile=new File("C:\\Users\\Lenovo\\Automation_Zipgo\\autoscripts_master\\src\\test\\resources\\testData\\Rac.xls");
  	  Workbook rwb=Workbook.getWorkbook(datafile);
  	  Sheet rsh=rwb.getSheet(0);
-  
+      int nouc=rsh.getColumns();
+
+     
       String customer1         =rsh.getCell(1, 10).getContents();
       System.out.println(customer1);
-      handledSleep(5);
+      handledSleep(2);
       clickButton(waitForElement(custiddropdown));
 	  sendValuesToWebElement(waitForElement(enterbox),customer1);
       handledSleep(2);
@@ -155,10 +157,14 @@ public class CreateOrder extends BasePage {
  	  Workbook rwb1=Workbook.getWorkbook(datafile1);
  	  int nous=rwb1.getNumberOfSheets();   
 	  Sheet rsh1=rwb1.getSheet(0);
-
-      String pickuploc      =rsh1.getCell(1, 8).getContents();
-      String droploc        =rsh1.getCell(1, 9).getContents();
+      
      
+	  
+	  String startHourdata       =rsh.getCell(1, 5).getContents();
+      String startMinutedata     =rsh.getCell(1, 6).getContents();
+      String pickuploc           =rsh1.getCell(1, 8).getContents();
+      String droploc             =rsh1.getCell(1, 9).getContents();
+    
     
       implictwait(30);
 	  clickButton(waitForElement(pickupdropdown));
@@ -171,6 +177,17 @@ public class CreateOrder extends BasePage {
       handledSleep(2);
 	  selectradiobutton(waitForElement(reqtripradiobut));
       handledSleep(2);
+	  clickButton(waitForElement(waittilltime));
+	  implictwait(30);
+	  waitForElement(waittilltime).clear();
+	  implictwait(30);
+	  String timee=startHourdata+startMinutedata;
+	  sendValuesToWebElement(waitForElement(waittilltime),timee);
+      handledSleep(2);
+      actionenter();
+	  implictwait(30);
+      actionenter();
+
 	  clickButton(waitForElement(savebutton));
       handledSleep(2);
       WebElement ordersuccesmsg=waitForElement(ordermsg);
@@ -196,14 +213,15 @@ public class CreateOrder extends BasePage {
 
 	    implictwait(30);
 	    refresh();
-	    return new CustomerApp();
+      
+	    return this;
   
 }
     
     
 		 public CreateOrder validate_newOrder() throws BiffException, IOException {
 			 
-			File datafile=new File("C:\\Users\\Lenovo\\Documents\\autoscripts\\src\\test\\resources\\testData\\CreateOrder.xls");
+			File datafile=new File("C:\\Users\\Lenovo\\Automation_Zipgo\\autoscripts_master\\src\\test\\resources\\testData\\CreateOrder.xls");
 		 	Workbook rwb=Workbook.getWorkbook(datafile);
 		 	Sheet rsh=rwb.getSheet(0);
 		 	  

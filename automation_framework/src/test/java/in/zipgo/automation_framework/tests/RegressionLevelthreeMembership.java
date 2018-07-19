@@ -1,4 +1,4 @@
-package in.zipgo.automation_framework.tests;
+/*package in.zipgo.automation_framework.tests;
 
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -19,6 +19,7 @@ public class RegressionLevelthreeMembership  extends BaseTests {
 	 @Test(priority=1)
      public void opendashboard() throws MalformedURLException {
 	       
+		
 			DriverFactory.createWebDriverInstance();	               
 	        ZipGoWorkflows zgw = new ZipGoWorkFlowImplementations();
 	        SignInPage signInPage = zgw.openSignInPage();
@@ -32,7 +33,7 @@ public class RegressionLevelthreeMembership  extends BaseTests {
           dash.logintogmail(goglog);       
      }
 	 
-	
+	 	
 	 @Test(priority=3)
      public void discountbasedmembership() throws BiffException, IOException{
 		 Memberships member =new Memberships();
@@ -40,5 +41,7 @@ public class RegressionLevelthreeMembership  extends BaseTests {
               
      }
 	 
+	 
 	  
 }
+*/

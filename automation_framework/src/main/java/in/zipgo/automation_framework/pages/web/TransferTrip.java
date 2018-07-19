@@ -13,7 +13,7 @@ public class TransferTrip extends BasePage {
 
 	
 	final By searchdriver           =By.xpath("//input[@type='search']");
-	final By glyphicon              =By.xpath("(//span[@class='glyphicon glyphicon-edit'])[2]");
+	final By glyphicon              =By.xpath("(//span[@class='glyphicon glyphicon-edit'])");
 	final By statusdropdown         =By.xpath("(//span[@title='Accepted'])[1]");
 	final By cancelstatus           =By.xpath("//li[text()='Canceled']");
 	final By cancelreason			=By.xpath("//span[text()='Select Cancel Reason']");
@@ -31,7 +31,7 @@ public class TransferTrip extends BasePage {
 	public TransferTrip transfertrip() {
 		
 		    try{
-			File datafile=new File("C:\\Users\\Lenovo\\Documents\\autoscripts\\src\\test\\resources\\testData\\CreateTripdata.xls");
+			File datafile=new File("C:\\Users\\Lenovo\\Automation_Zipgo\\autoscripts_master\\src\\test\\resources\\testData\\CreateTripdata.xls");
 	 	    Workbook rwb=Workbook.getWorkbook(datafile);
 	 	    int nous=rwb.getNumberOfSheets();
 	 	    Sheet rsh=rwb.getSheet(0);
@@ -47,7 +47,9 @@ public class TransferTrip extends BasePage {
 		    }
 		
 		    scrolldown();
-		    moveToElement(glyphicon);
+		    handledSleep(3);
+		    implictwait(30);
+		   // moveToElement(glyphicon);
 	     	implictwait(30);
 		    waitForElement(glyphicon).click();
 		    handledSleep(7);		

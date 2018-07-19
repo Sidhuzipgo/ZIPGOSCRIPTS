@@ -29,7 +29,7 @@ public class Start_EndTrip extends BasePage {
 	public Start_EndTrip start_trip() {
 		
 		   
-		    
+		    refresh();
 		    handledSleep(5);
             implictwait(40);
 	        clickButton(waitForElement(transmap));
@@ -37,7 +37,7 @@ public class Start_EndTrip extends BasePage {
 	        implictwait(30);
 		    waitForElement(bustrips).click();
 		    try{ 
-		    File datafile=new File("C:\\Users\\Lenovo\\Documents\\autoscripts\\src\\test\\resources\\testData\\CurrentTrip.xls");
+		    File datafile=new File("C:\\Users\\Lenovo\\Automation_Zipgo\\autoscripts_master\\src\\test\\resources\\testData\\CurrentTrip.xls");
 		 	Workbook rwb=Workbook.getWorkbook(datafile);
 		 	int nous=rwb.getNumberOfSheets();   
 		    Sheet rsh=rwb.getSheet(0);
@@ -45,6 +45,7 @@ public class Start_EndTrip extends BasePage {
 	 	 	int nouc=rsh.getColumns();	
 	        refresh();
 	 	    String currentdriver=rsh.getCell(1, 0).getContents();
+	 	    System.out.println("*********"+currentdriver);
 		    waitForElement(searchdriver).sendKeys(currentdriver);	
 		    handledSleep(5);		
 

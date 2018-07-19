@@ -62,7 +62,7 @@ public class CustomerApp extends BasePage {
     final By totalamount                =By.xpath("//*[@resource-id='com.zipgo.customer:id/tv_amount'][@index='1']");
 
     
-    final By newRequest                 =By.xpath("//*[@text='New Request']");
+    final By bookaride                  =By.xpath("//*[@text='Book a Ride']");
     final By searchnewroute             =By.xpath("//*[@text='Search New Route']");
     final By pickupbox                  =By.xpath("//*[@resource-id='com.zipgo.customer:id/tv_pickup']");
     final By enterpickbox               =By.xpath("//*[@resource-id='com.zipgo.customer:id/et_search']");
@@ -70,9 +70,9 @@ public class CustomerApp extends BasePage {
     final By destinatinbox              =By.xpath("//*[@resource-id='com.zipgo.customer:id/tv_destination']");
     
     final By viewtimings                =By.xpath("//*[@resource-id='com.zipgo.customer:id/btn_view_trips']");
-    final By reservebutton              =By.xpath("//*[@resource-id='com.zipgo.customer:id/btn_reserve']");
-    final By reservebutton1             =By.xpath("(//*[@resource-id='com.zipgo.customer:id/btn_reserve'])[1]");
-    final By racreservebutton           =By.xpath("//*[@resource-id='com.zipgo.customer:id/btn_rac_reserve']");
+    final By available                  =By.xpath("//*[@text='Available']");
+    final By available1                 =By.xpath("(//*[@text='Available'])[1]");
+    final By racreservebutton           =By.xpath("//*[@text='RAC : 1']");
 	final By specifytimelimit           =By.xpath("//*[@resource-id='com.zipgo.customer:id/select_wait_time']");
     final By racdone                    =By.xpath("//*[@resource-id='com.zipgo.customer:id/confirm_wait_time']");  
     
@@ -415,7 +415,7 @@ public class CustomerApp extends BasePage {
          driver2.findElement(hamburger).click();         
          handledSleep(1);
          driver2.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-         driver2.findElement(newRequest).click();
+         driver2.findElement(bookaride).click();
          handledSleep(2);
          driver2.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
          if(driver2.findElements(searchnewroute).size()!=0) {
@@ -448,15 +448,15 @@ public class CustomerApp extends BasePage {
          driver2.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
          driver2.findElement(viewtimings).click(); 
          
-         if( driver2.findElements(reservebutton).size()>1) {
+         if( driver2.findElements(available).size()>1) {
              handledSleep(1);
-             driver2.findElement(reservebutton1).click();
+             driver2.findElement(available1).click();
 
          }
          else {
         	 handledSleep(1);
              driver2.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-             driver2.findElement(reservebutton).click();
+             driver2.findElement(available).click();
          }
         
          handledSleep(1);
@@ -643,9 +643,9 @@ public class CustomerApp extends BasePage {
 		 handledSleep(1);
          ((AndroidDeviceActionShortcuts) driver2).pressKeyCode(4);
 		 while(driver2.findElements(hamburger).size()==0) {
-			 handledSleep(1);
-	         driver2.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-	         ((AndroidDeviceActionShortcuts) driver2).pressKeyCode(4);
+		 handledSleep(1);
+	     driver2.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
+	     ((AndroidDeviceActionShortcuts) driver2).pressKeyCode(4);
 		 }
          
 		 return this;
@@ -780,7 +780,7 @@ public class CustomerApp extends BasePage {
          driver2.findElement(hamburger).click();         
          handledSleep(1);
          driver2.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-         driver2.findElement(newRequest).click();
+         driver2.findElement(bookaride).click();
          handledSleep(1);
          driver2.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
          if(driver2.findElements(searchnewroute).size()!=0) {
@@ -852,7 +852,8 @@ public class CustomerApp extends BasePage {
 		 return this;
 	     }
 	 
-	    public CustomerApp editprofile() {		 
+	    
+	 public CustomerApp editprofile() {		 
 
          handledSleep(2);
          driver2.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
@@ -1107,7 +1108,7 @@ public class CustomerApp extends BasePage {
 		 }
          handledSleep(2);
          driver2.manage().timeouts().implicitlyWait(40, TimeUnit.SECONDS);
-		 if(driver2.findElements(reservebutton).size()!=0) {
+		 if(driver2.findElements(available).size()!=0) {
 			 System.out.println("Reserve is Displayed");
 		 }
          ((AndroidDeviceActionShortcuts) driver2).pressKeyCode(4);

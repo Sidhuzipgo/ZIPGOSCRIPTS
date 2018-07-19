@@ -1,62 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="12" passed="12">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50360" started-at="2018-03-14T09:42:02Z" finished-at="2018-03-14T09:42:52Z">
+  <suite name="Default suite" duration-ms="475617" started-at="2018-07-19T06:47:45Z" finished-at="2018-07-19T06:55:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="50360" started-at="2018-03-14T09:42:02Z" finished-at="2018-03-14T09:42:52Z">
-      <class name="in.zipgo.automation_framework.tests.RegressionLevelthreeMembership">
-        <test-method status="PASS" signature="setupTest()[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelthreeMembership@58a90037]" name="setupTest" is-config="true" duration-ms="11" started-at="2018-03-14T15:12:02Z" finished-at="2018-03-14T15:12:02Z">
+    <test name="Default test" duration-ms="475617" started-at="2018-07-19T06:47:45Z" finished-at="2018-07-19T06:55:40Z">
+      <class name="in.zipgo.automation_framework.tests.RegressionLevelOne">
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="setupTest" is-config="true" duration-ms="9" started-at="2018-07-19T12:17:45Z" finished-at="2018-07-19T12:17:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupTest -->
-        <test-method status="PASS" signature="opendashboard()[pri:1, instance:in.zipgo.automation_framework.tests.RegressionLevelthreeMembership@58a90037]" name="opendashboard" duration-ms="12677" started-at="2018-03-14T15:12:02Z" finished-at="2018-03-14T15:12:14Z">
+        <test-method status="PASS" signature="opendashboard()[pri:1, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="opendashboard" duration-ms="12728" started-at="2018-07-19T12:17:45Z" finished-at="2018-07-19T12:17:58Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- opendashboard -->
-        <test-method status="PASS" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelthreeMembership@58a90037]" name="tearDownTest" is-config="true" duration-ms="1" started-at="2018-03-14T15:12:14Z" finished-at="2018-03-14T15:12:14Z">
+        <test-method status="PASS" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="tearDownTest" is-config="true" duration-ms="2" started-at="2018-07-19T12:17:58Z" finished-at="2018-07-19T12:17:58Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=opendashboard status=SUCCESS method=RegressionLevelthreeMembership.opendashboard()[pri:1, instance:in.zipgo.automation_framework.tests.RegressionLevelthreeMembership@58a90037] output={null}]]]>
+                <![CDATA[[TestResult name=opendashboard status=SUCCESS method=RegressionLevelOne.opendashboard()[pri:1, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method status="PASS" signature="logintodashboard()[pri:2, instance:in.zipgo.automation_framework.tests.RegressionLevelthreeMembership@58a90037]" name="logintodashboard" duration-ms="8193" started-at="2018-03-14T15:12:14Z" finished-at="2018-03-14T15:12:23Z">
+        <test-method status="PASS" signature="logintodashboard()[pri:2, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="logintodashboard" duration-ms="9689" started-at="2018-07-19T12:17:58Z" finished-at="2018-07-19T12:18:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logintodashboard -->
-        <test-method status="PASS" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelthreeMembership@58a90037]" name="tearDownTest" is-config="true" duration-ms="0" started-at="2018-03-14T15:12:23Z" finished-at="2018-03-14T15:12:23Z">
+        <test-method status="PASS" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="tearDownTest" is-config="true" duration-ms="0" started-at="2018-07-19T12:18:07Z" finished-at="2018-07-19T12:18:07Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=logintodashboard status=SUCCESS method=RegressionLevelthreeMembership.logintodashboard()[pri:2, instance:in.zipgo.automation_framework.tests.RegressionLevelthreeMembership@58a90037] output={null}]]]>
+                <![CDATA[[TestResult name=logintodashboard status=SUCCESS method=RegressionLevelOne.logintodashboard()[pri:2, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method status="PASS" signature="discountbasedmembership()[pri:3, instance:in.zipgo.automation_framework.tests.RegressionLevelthreeMembership@58a90037]" name="discountbasedmembership" duration-ms="29449" started-at="2018-03-14T15:12:23Z" finished-at="2018-03-14T15:12:52Z">
+        <test-method status="PASS" signature="createTrip()[pri:3, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="createTrip" duration-ms="168520" started-at="2018-07-19T12:18:07Z" finished-at="2018-07-19T12:20:56Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- discountbasedmembership -->
-        <test-method status="PASS" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelthreeMembership@58a90037]" name="tearDownTest" is-config="true" duration-ms="1" started-at="2018-03-14T15:12:52Z" finished-at="2018-03-14T15:12:52Z">
+        </test-method> <!-- createTrip -->
+        <test-method status="PASS" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="tearDownTest" is-config="true" duration-ms="0" started-at="2018-07-19T12:20:56Z" finished-at="2018-07-19T12:20:56Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=discountbasedmembership status=SUCCESS method=RegressionLevelthreeMembership.discountbasedmembership()[pri:3, instance:in.zipgo.automation_framework.tests.RegressionLevelthreeMembership@58a90037] output={null}]]]>
+                <![CDATA[[TestResult name=createTrip status=SUCCESS method=RegressionLevelOne.createTrip()[pri:3, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-      </class> <!-- in.zipgo.automation_framework.tests.RegressionLevelthreeMembership -->
+        <test-method status="PASS" signature="cabtripattendance()[pri:4, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="cabtripattendance" duration-ms="28633" started-at="2018-07-19T12:20:56Z" finished-at="2018-07-19T12:21:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cabtripattendance -->
+        <test-method status="PASS" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="tearDownTest" is-config="true" duration-ms="1" started-at="2018-07-19T12:21:24Z" finished-at="2018-07-19T12:21:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cabtripattendance status=SUCCESS method=RegressionLevelOne.cabtripattendance()[pri:4, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method status="PASS" signature="manualDelay()[pri:5, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="manualDelay" duration-ms="11978" started-at="2018-07-19T12:21:24Z" finished-at="2018-07-19T12:21:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- manualDelay -->
+        <test-method status="PASS" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="tearDownTest" is-config="true" duration-ms="0" started-at="2018-07-19T12:21:36Z" finished-at="2018-07-19T12:21:36Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=manualDelay status=SUCCESS method=RegressionLevelOne.manualDelay()[pri:5, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method status="PASS" signature="cancelfirsttrip()[pri:6, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="cancelfirsttrip" duration-ms="51501" started-at="2018-07-19T12:21:36Z" finished-at="2018-07-19T12:22:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelfirsttrip -->
+        <test-method status="PASS" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="tearDownTest" is-config="true" duration-ms="0" started-at="2018-07-19T12:22:28Z" finished-at="2018-07-19T12:22:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cancelfirsttrip status=SUCCESS method=RegressionLevelOne.cancelfirsttrip()[pri:6, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method status="PASS" signature="transfercabtrip()[pri:7, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="transfercabtrip" duration-ms="20136" started-at="2018-07-19T12:22:28Z" finished-at="2018-07-19T12:22:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- transfercabtrip -->
+        <test-method status="PASS" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="tearDownTest" is-config="true" duration-ms="0" started-at="2018-07-19T12:22:48Z" finished-at="2018-07-19T12:22:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=transfercabtrip status=SUCCESS method=RegressionLevelOne.transfercabtrip()[pri:7, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method status="PASS" signature="startendtrip()[pri:8, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="startendtrip" duration-ms="33962" started-at="2018-07-19T12:22:48Z" finished-at="2018-07-19T12:23:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startendtrip -->
+        <test-method status="PASS" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="tearDownTest" is-config="true" duration-ms="0" started-at="2018-07-19T12:23:22Z" finished-at="2018-07-19T12:23:22Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=startendtrip status=SUCCESS method=RegressionLevelOne.startendtrip()[pri:8, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method status="PASS" signature="opendashboard1()[pri:9, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="opendashboard1" duration-ms="13042" started-at="2018-07-19T12:23:22Z" finished-at="2018-07-19T12:23:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- opendashboard1 -->
+        <test-method status="PASS" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="tearDownTest" is-config="true" duration-ms="0" started-at="2018-07-19T12:23:35Z" finished-at="2018-07-19T12:23:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=opendashboard1 status=SUCCESS method=RegressionLevelOne.opendashboard1()[pri:9, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method status="PASS" signature="logintodashboard1()[pri:10, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="logintodashboard1" duration-ms="9940" started-at="2018-07-19T12:23:35Z" finished-at="2018-07-19T12:23:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintodashboard1 -->
+        <test-method status="PASS" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="tearDownTest" is-config="true" duration-ms="2" started-at="2018-07-19T12:23:45Z" finished-at="2018-07-19T12:23:45Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=logintodashboard1 status=SUCCESS method=RegressionLevelOne.logintodashboard1()[pri:10, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method status="PASS" signature="createnewOrder()[pri:11, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="createnewOrder" duration-ms="62958" started-at="2018-07-19T12:23:45Z" finished-at="2018-07-19T12:24:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createnewOrder -->
+        <test-method status="PASS" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="tearDownTest" is-config="true" duration-ms="1" started-at="2018-07-19T12:24:48Z" finished-at="2018-07-19T12:24:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=createnewOrder status=SUCCESS method=RegressionLevelOne.createnewOrder()[pri:11, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method status="PASS" signature="validate_cab_attendance()[pri:12, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="validate_cab_attendance" duration-ms="52472" started-at="2018-07-19T12:24:48Z" finished-at="2018-07-19T12:25:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_cab_attendance -->
+        <test-method status="PASS" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb]" name="tearDownTest" is-config="true" duration-ms="0" started-at="2018-07-19T12:25:40Z" finished-at="2018-07-19T12:25:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validate_cab_attendance status=SUCCESS method=RegressionLevelOne.validate_cab_attendance()[pri:12, instance:in.zipgo.automation_framework.tests.RegressionLevelOne@74294adb] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+      </class> <!-- in.zipgo.automation_framework.tests.RegressionLevelOne -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

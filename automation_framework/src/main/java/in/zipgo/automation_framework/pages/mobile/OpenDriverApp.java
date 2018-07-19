@@ -17,7 +17,9 @@ import java.util.concurrent.TimeUnit;
 
 import in.zipgo.automation_framework.base.DriverFactory;
 import in.zipgo.automation_framework.pages.web.BasePage;
+import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
 import jxl.Sheet;
 import jxl.Workbook;
 import jxl.read.biff.BiffException;
@@ -63,6 +65,19 @@ public class OpenDriverApp extends BasePage {
 	
 	
 	 public OpenDriverApp opentheapp() throws BiffException, IOException, InterruptedException  {
+		 
+		    AndroidDriver<MobileElement> driver1=null;
+		    AppiumDriverLocalService service=null;
+
+		    service = AppiumDriverLocalService.buildDefaultService();
+		    DesiredCapabilities capabilities = new DesiredCapabilities();  
+		    capabilities.setCapability("platormName", "Android");  
+		    capabilities.setCapability("deviceName", "TA385045DW");  
+		    capabilities.setCapability("appPackage","com.zipgo.bus");  
+		    capabilities.setCapability("appActivity","com.zipgo.bus.activities.LoginActivity");  
+
+		    service.start();
+		    driver1 = new AndroidDriver<MobileElement>(service, capabilities);
 		   
 		 
 /*	  
@@ -92,11 +107,12 @@ public class OpenDriverApp extends BasePage {
 			  
 			driver1 = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);*/
 
+	/*	    //''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''''
 		  DesiredCapabilities capabilities = new DesiredCapabilities();
 
 		  capabilities.setCapability(CapabilityType.BROWSER_NAME, "");
 		   
-		  capabilities.setCapability("deviceName", "0123456789ABCDEF");
+		  capabilities.setCapability("deviceName", "TA385045DW");
 
 		  capabilities.setCapability("platformVersion", "6.0.0");
 
@@ -105,14 +121,18 @@ public class OpenDriverApp extends BasePage {
 		  //capabilities.setCapability("autoGrantPermissions","true");
 
   
-		  capabilities.setCapability("appActivity", "com.zipgo.bus");
+		  capabilities.setCapability("appPackage", "com.zipgo.bus");
 
   
-		  capabilities.setCapability("appActivity", "com.zipgo.bus.activities.StartingActivity");
-
-			driver1 = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);			
-
-		//  driver1 = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+		//  capabilities.setCapability("appActivity", "com.zipgo.bus.activities.StartingActivity");
+		  capabilities.setCapability("appActivity", "com.zipgo.bus.activities.LoginActivity");
+		    					  
+		  driver1 = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);	
+		  
+		  //..............................................................................................
+*/		
+		    
+		    //  driver1 = new AndroidDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
 		  
 		 /* Thread.sleep(5000);
 		  //Validating Driver Login Screen

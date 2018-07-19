@@ -18,7 +18,10 @@ import in.zipgo.automation_framework.pages.web.BasePage;
 	    
 		  public Googlelogin entergoogleusername(){	
 
-		      waitForElement(gmailuserid).sendKeys("siddhartha@zipgo.in",Keys.ENTER);		
+			  handledSleep(2);
+			  actionsendkeys("siddhartha@zipgo.in");
+			  actionenter();
+		     // waitForElement(gmailuserid).sendKeys("siddhartha@zipgo.in",Keys.ENTER);		
 		      return this;
 		   
 		  }	
@@ -27,9 +30,12 @@ import in.zipgo.automation_framework.pages.web.BasePage;
 		  
 		     handledSleep(3);
 		     implictwait(30);
-		     waitForElement(gmailpwd).sendKeys("sidhuzipgo");
+		     
+		     actionsendkeys("sidhuzipgo");
+			  actionenter();
+		    // waitForElement(gmailpwd).sendKeys("sidhuzipgo");
 		     implictwait(30);
-		     waitForElement(nextbutton).click();
+		    // waitForElement(nextbutton).click();
 		     handledSleep(3);
 			 return this;
 
